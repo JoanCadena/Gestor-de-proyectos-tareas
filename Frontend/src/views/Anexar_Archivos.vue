@@ -111,6 +111,7 @@ export default {
       axios.post("https://subir-archivo.free.beeceptor.com/subir-archivo", formData).then((resp) => {
         console.log(resp);
         alert("Se ha subido correctamente: " + this.archivo.name)
+        //Ensayo
       })
     },
   },
