@@ -1,41 +1,66 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/Registro_investigadores">Investigadores</router-link> |
-      <router-link to="/Registro_espacio">Espacios de trabajo</router-link> |
-      <router-link to="/Registro_integrantes_espacio">Integrantes del espacio</router-link> |
-      <router-link to="/Crear_compromiso">Compromiso</router-link> |
-      <router-link to="/anexar_archivos">Archivos</router-link>
+    <div id="nav"  >
+      <img class="Logoudem" src="../src/static/logoudem.png" height="150" width="180">
+      <div id="links">
+        <router-link class="link" to="/Registro_investigadores"> Investigadores </router-link> 
+        <router-link class="link" to="/Registro_espacio"> Espacios de trabajo </router-link> 
+        <router-link class="link" to="/Registro_integrantes_espacio">Integrantes del espacio </router-link> 
+        <router-link class="link" to="/Crear_compromiso"> Compromiso </router-link> 
+        <router-link class="link" to="/anexar_archivos"> Archivos </router-link>
+      </div>
     </div>
     <router-view/>
   </div>
+  
 </template>
+
 
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
+  
 }
 
-#nav {
-  padding: 30px;
+#nav{
+  margin-top: 5px;
+  margin-bottom: 110px;
+}
+
+#nav .Logoudem{
+  position: absolute;
+  margin-left: 80px;
+  
+  
+}
+
+#nav #links{
+  background: #BA0F16;
+  margin-bottom: 30px;
+  padding: 10px;
+  text-align: center;
+  
+  
 }
 
 #nav a {
   font-weight: bold;
-  color: #2c3e50;
+  color: #FFFFFF;
+  font-size: 12px;
+  margin-left: 6px;
 }
 
 #nav a:hover {
-  color: #89bba4;
+  color: #F68788;
 }
 
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
+
+/*#nav a.router-link-exact-active {
+  
+}*/
 
 .form-row{
   margin-left: 150px;
@@ -44,10 +69,12 @@
 
 .data{
   margin-bottom: 60px;
+  
 }
 
 #btnArchivo{
   margin-bottom: 60px;
+  
 }
 
 .btn-mod{

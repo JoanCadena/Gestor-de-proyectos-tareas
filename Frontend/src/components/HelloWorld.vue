@@ -19,6 +19,9 @@ export default {
 h3 {
   margin: 40px 0 0;
 }
+h1{
+  text-align: center;
+}
 ul {
   list-style-type: none;
   padding: 0;
