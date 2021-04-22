@@ -4,6 +4,7 @@ const dotenv = require('dotenv').config();
 module.exports = {
 
   PASSWORD: process.env.PASSWORD,
-  PORT: process.env.PORT
+  MY_PASS: process.env.MY_PASS,
+  MY_USER: process.env.MY_USER
 
 }
