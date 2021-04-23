@@ -27,7 +27,7 @@
 
 #nav{
   margin-top: 5px;
-  margin-bottom: 110px;
+  margin-bottom: 50px;
 }
 
 #nav .Logoudem{
