@@ -37,10 +37,11 @@ let validarEspacioTrabajo = (espacioTrabajo) => {
 let guardarEspacioTrabajo = async (espacioTrabajo) => {
   let _servicio = new ServicioPg();
   let sql = `INSERT INTO public.workspace(
-	workspace_name, description, due_date)
+	workspace_name, description, due_date, date_extended)
     VALUES (
     '${espacioTrabajo.workspace_name}', 
     '${espacioTrabajo.description}', 
+    '${espacioTrabajo.due_date}', 
     '${espacioTrabajo.due_date}');`;
 
   let respuesta = await _servicio.ejecutarSql(sql);
