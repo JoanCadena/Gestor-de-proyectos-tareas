@@ -29,3 +29,5 @@ const PORT = config.PORT || 3001;
 app.listen(PORT, () => {
   console.log(`Escuchando API en http://localhost:${PORT}`);
 });
+
+module.exports = app;

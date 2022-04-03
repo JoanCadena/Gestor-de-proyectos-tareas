@@ -4,6 +4,9 @@
   "description": "En esta carpeta se encuentra todo lo relacionado con el manejo de formulario, bases de datos",
   "main": "app.js",
   "scripts": {
+    "dev": "nodemon app.js",
+    "test_anexar_archivo": "mocha test/anexar_archivo.test.js",
+    "test_crear_compromiso": "mocha test/crear_compromisos.test.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -14,7 +17,11 @@
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "fs": "0.0.1-security",
+    "mocha": "^9.2.2",
+    "mocha-github-actions-reporter": "^0.2.4",
     "nodemailer": "^6.5.0",
-    "pg": "^8.5.1"
+    "nodemon": "^2.0.15",
+    "pg": "^8.5.1",
+    "supertest": "^6.2.2"
   }
 }
